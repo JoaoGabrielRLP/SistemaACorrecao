@@ -1,0 +1,25 @@
+Atue como um Engenheiro de Software Sênior especialista em React, Tailwind CSS e Supabase. 
+
+Estou construindo um Web App para gerenciar fichas e imersão de um RPG de mesa chamado "A Correção" (tema Biopunk). Preciso que você crie o escopo inicial e o código base para a Fase 1 do projeto: Autenticação e Criação de Personagem.
+
+**Stack Tecnológico:**
+- React (Vite)
+- Tailwind CSS
+- Supabase (Autenticação e Banco de Dados PostgreSQL)
+
+**Requisitos da Fase 1:**
+1. **Módulo de Autenticação:** - Uma tela de Login/Registro simples usando e-mail e senha via Supabase Auth.
+2. **Onboarding (Criação de Perfil):**
+   - Após o login pela primeira vez, o usuário deve escolher seu Nome de Sentinela, sua Classe (ex: Triblader, Hexacast) e sua Escola (ex: Horizon, Atlas).
+3. **Customizador 2D (Paper Doll):**
+   - Uma interface onde o jogador pode montar a aparência do personagem sobrepondo imagens (usando z-index).
+   - O estado do React deve controlar a seleção atual (ex: `corpo_base`, `rosto`, `roupa_torso`, `armadura`).
+   - O usuário deve poder escolher uma cor hexadecimal para "tingir" a armadura (usando CSS mix-blend-mode na camada da armadura).
+4. **Salvamento:**
+   - O resultado final não deve salvar uma imagem, mas sim um objeto JSON contendo as chaves das escolhas e a cor, enviando isso para uma tabela `profiles` no Supabase, vinculada ao ID do usuário autenticado.
+
+**O que eu preciso agora:**
+1. A estrutura de pastas recomendada para organizar os componentes e serviços (Supabase) deste projeto.
+2. O código de um componente React (ex: `CharacterCreator.jsx`) que simule a lógica do "Paper Doll" em tela, trocando de roupas ao clicar em botões, e a lógica de aplicar o filtro de cor em uma das camadas. Use divs coloridas como "placeholders" para as imagens, pois eu adicionarei os arquivos PNG com fundo transparente depois.
+
+Escreva um código limpo, componentizado e pronto para produção.
